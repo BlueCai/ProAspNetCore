@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{06030140-AE01-4F62-847F-5563E98CEACB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{60C0FC39-A132-4F2C-A3A2-5FCE1B935F3B}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BlueCaiCms", "src\BlueCaiCms\BlueCaiCms.xproj", "{8560C9AC-5C15-4F68-B6FE-5D47E2AE672B}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BlueCaiCms.BLL", "src\BlueCaiCms.BLL\BlueCaiCms.BLL.xproj", "{2EE85210-6CE2-438C-AA86-11E2591C713C}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BlueCaiCms.Data.EF", "src\BlueCaiCms.Data.EF\BlueCaiCms.Data.EF.xproj", "{6176D98D-9AA9-4976-802A-CD548373888F}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BlueCaiCms.Data.Model", "src\BlueCaiCms.Data.Model\BlueCaiCms.Data.Model.xproj", "{8FE74409-0EDE-4B57-B1C2-A4C57D5817A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8560C9AC-5C15-4F68-B6FE-5D47E2AE672B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8560C9AC-5C15-4F68-B6FE-5D47E2AE672B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8560C9AC-5C15-4F68-B6FE-5D47E2AE672B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8560C9AC-5C15-4F68-B6FE-5D47E2AE672B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EE85210-6CE2-438C-AA86-11E2591C713C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EE85210-6CE2-438C-AA86-11E2591C713C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EE85210-6CE2-438C-AA86-11E2591C713C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EE85210-6CE2-438C-AA86-11E2591C713C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6176D98D-9AA9-4976-802A-CD548373888F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6176D98D-9AA9-4976-802A-CD548373888F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6176D98D-9AA9-4976-802A-CD548373888F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6176D98D-9AA9-4976-802A-CD548373888F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FE74409-0EDE-4B57-B1C2-A4C57D5817A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FE74409-0EDE-4B57-B1C2-A4C57D5817A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FE74409-0EDE-4B57-B1C2-A4C57D5817A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FE74409-0EDE-4B57-B1C2-A4C57D5817A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8560C9AC-5C15-4F68-B6FE-5D47E2AE672B} = {06030140-AE01-4F62-847F-5563E98CEACB}
+		{2EE85210-6CE2-438C-AA86-11E2591C713C} = {06030140-AE01-4F62-847F-5563E98CEACB}
+		{6176D98D-9AA9-4976-802A-CD548373888F} = {06030140-AE01-4F62-847F-5563E98CEACB}
+		{8FE74409-0EDE-4B57-B1C2-A4C57D5817A8} = {06030140-AE01-4F62-847F-5563E98CEACB}
+	EndGlobalSection
+EndGlobal
