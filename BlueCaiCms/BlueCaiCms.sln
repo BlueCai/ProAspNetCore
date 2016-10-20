@@ -18,6 +18,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BlueCaiCms.Data.EF", "src\B
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BlueCaiCms.Data.Model", "src\BlueCaiCms.Data.Model\BlueCaiCms.Data.Model.xproj", "{8FE74409-0EDE-4B57-B1C2-A4C57D5817A8}"
 EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BlueCaiCms.Data.DataProvider", "src\BlueCaiCms.Data.DataProvider\BlueCaiCms.Data.DataProvider.xproj", "{ED2DFE02-5833-4B6D-9E2E-E7D578F6B2F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,10 @@ Global
 		{8FE74409-0EDE-4B57-B1C2-A4C57D5817A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FE74409-0EDE-4B57-B1C2-A4C57D5817A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FE74409-0EDE-4B57-B1C2-A4C57D5817A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED2DFE02-5833-4B6D-9E2E-E7D578F6B2F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED2DFE02-5833-4B6D-9E2E-E7D578F6B2F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED2DFE02-5833-4B6D-9E2E-E7D578F6B2F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED2DFE02-5833-4B6D-9E2E-E7D578F6B2F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,5 +55,6 @@ Global
 		{2EE85210-6CE2-438C-AA86-11E2591C713C} = {06030140-AE01-4F62-847F-5563E98CEACB}
 		{6176D98D-9AA9-4976-802A-CD548373888F} = {06030140-AE01-4F62-847F-5563E98CEACB}
 		{8FE74409-0EDE-4B57-B1C2-A4C57D5817A8} = {06030140-AE01-4F62-847F-5563E98CEACB}
+		{ED2DFE02-5833-4B6D-9E2E-E7D578F6B2F0} = {06030140-AE01-4F62-847F-5563E98CEACB}
 	EndGlobalSection
 EndGlobal

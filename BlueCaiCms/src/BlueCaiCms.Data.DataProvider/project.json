@@ -2,12 +2,13 @@
   "version": "1.0.0-*",
 
   "dependencies": {
+    "BlueCaiCms.BLL": "1.0.0-*",
+    "BlueCaiCms.Data.EF": "1.0.0-*",
+    "BlueCaiCms.Data.Model": "1.0.0-*",
     "Microsoft.NETCore.App": {
       "version": "1.0.1",
       "type": "platform"
-    },
-    "Microsoft.EntityFrameworkCore.SqlServer": "1.0.1",
-    "BlueCaiCms.Data.Model": "1.0.0-*"
+    }
   },
 
   "frameworks": {

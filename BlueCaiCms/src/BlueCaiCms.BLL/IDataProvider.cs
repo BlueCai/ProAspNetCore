@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace BlueCaiCms.BLL
 {
-    public class IDataProvider
+    public interface IDataProvider
     {
     }
 }

@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BlueCaiCms.Model
+namespace BlueCaiCms.Model.Enum
 {
-    public class Class1
+    public enum Grade
     {
-        public Class1()
-        {
-        }
+        First,
+        Second,
+        Third
     }
 }
