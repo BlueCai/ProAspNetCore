@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace BlueCaiCms.Model
 {
-    public class Student
+    public class Student : BaseModel
     {
         public string Name { get; set; }
 

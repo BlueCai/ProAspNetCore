@@ -9,7 +9,7 @@ namespace BlueCaiCms.Data.EF
 {
     public class BCDbContext: DbContext
     {
-        public BCDbContext()
+        public BCDbContext(DbContextOptions<BCDbContext> options):base(options)
         {
         }
 
