@@ -1,5 +1,6 @@
 ﻿using BlueCaiCms.BLL;
 using BlueCaiCms.Data.EF;
+using BlueCaiCms.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,34 +10,30 @@ namespace BlueCaiCms.Data.DataProvider
 {
     public class DataProvider : IDataProvider
     {
+        #region CommonFunction
         private readonly BCDbContext dbContext;
         public DataProvider(BCDbContext dbContext)
         {
             this.dbContext = dbContext;
         }
 
-        public IQueryable<T> Find<T>() where T : class, new()
+        
+        #endregion
+
+        public List<Student> GetAllStudent()
         {
-            return dbContext.Set<T>();
+            return dbContext.Students.ToList();
         }
 
-        public void Create<T>(T entity) where T : class, new()
+        public Student GetStudentById(Guid id)
         {
-            dbContext.Set<T>().Add(entity);
+            return dbContext.Students.Where(c => c.Id == id).FirstOrDefault();
         }
 
-        public void Update<T>(T entity) where T : class, new()
+        public void Create(Student student)
         {
-        }
-
-        public void Save()
-        {
+            dbContext.Students.Add(student);
             dbContext.SaveChanges();
-        }
-
-        public void Delete<T>(T entity) where T : class, new()
-        {
-            dbContext.Set<T>().Remove(entity);
         }
     }
 }

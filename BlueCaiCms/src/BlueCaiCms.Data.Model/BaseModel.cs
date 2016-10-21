@@ -7,7 +7,7 @@ namespace BlueCaiCms.Model
 {
     public abstract class BaseModel
     {
-        public Guid Id { get; set; }
+        public Guid Id { get; set; } = Guid.NewGuid(); 
 
         public DateTime CreateTime { get; set; } = DateTime.Now;
 
@@ -15,6 +15,6 @@ namespace BlueCaiCms.Model
 
         public DateTime? RemoveTime { get; set; }
 
-        public bool IsDeleted { get; set; } = true;
+        public bool IsDeleted { get; set; } = false;
     }
 }

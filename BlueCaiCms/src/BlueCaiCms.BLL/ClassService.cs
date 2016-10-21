@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace BlueCaiCms.BLL
 {
-    public class Class1
+    public class ClassService
     {
-        public Class1()
+        public ClassService()
         {
         }
     }
