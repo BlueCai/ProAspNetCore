@@ -21,7 +21,9 @@
     },
     "BlueCaiCms.BLL": "1.0.0-*",
     "BlueCaiCms.Data.EF": "1.0.0-*",
-    "BlueCaiCms.Data.DataProvider": "1.0.0-*"
+    "BlueCaiCms.Data.DataProvider": "1.0.0-*",
+    "BlueCaiCms.Data.Dapper": "1.0.0-*",
+    "Swashbuckle": "6.0.0-beta902"
   },
   "tools": {
     "Microsoft.AspNetCore.Razor.Tools": "1.0.0-preview2-final",

@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using BlueCaiCms.BLL;
 using BlueCaiCms.Data.DataProvider;
+using BlueCaiCms.Data.Dapper.Repositories;
 
 namespace BlueCaiCms
 {
@@ -32,6 +33,7 @@ namespace BlueCaiCms
         {
             DiConfig(services);
             services.AddMvc();
+            services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +42,8 @@ namespace BlueCaiCms
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
             app.UseStaticFiles();
+            app.UseSwagger();
+            app.UseSwaggerUi();
             app.UseMvcWithDefaultRoute();
         }
 
@@ -49,6 +53,7 @@ namespace BlueCaiCms
             services.AddTransient<StudentService>();
             services.AddTransient<ClassService>();
             services.AddTransient<IDataProvider, DataProvider>();
+            services.AddTransient<ProductRepository>();
         }
     }
 }
