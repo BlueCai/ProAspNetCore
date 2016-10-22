@@ -20,12 +20,12 @@ namespace BlueCaiCms
     {
         IConfigurationRoot configuration;
 
-        public Startup(IHostingEnvironment env)
-        {
-            configuration = new ConfigurationBuilder()
-                .SetBasePath(env.ContentRootPath)
-                .AddJsonFile("appsettings.json").Build();
-        }
+        //public Startup(IHostingEnvironment env)
+        //{
+        //    configuration = new ConfigurationBuilder()
+        //        .SetBasePath(env.ContentRootPath)
+        //        .AddJsonFile("appsettings.json").Build();
+        //}
 
         // This method gets called by the runtime. Use this method to add services to the container.
         // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
@@ -49,7 +49,8 @@ namespace BlueCaiCms
 
         private void DiConfig(IServiceCollection services)
         {
-            services.AddDbContext<BCDbContext>(option => option.UseSqlServer(configuration["Data:BlueCaiCms:ConnectionString"]));
+            //services.AddDbContext<BCDbContext>(option => option.UseSqlServer(configuration["Data:BlueCaiCms:ConnectionString"]));
+            services.AddDbContext<BCDbContext>(option => option.UseSqlServer("Server=192.168.81.133;Database=BlueCaiCms;User ID=sa;Password=Caiqb@163.1989;Connection Timeout=30;"));
             services.AddTransient<StudentService>();
             services.AddTransient<ClassService>();
             services.AddTransient<IDataProvider, DataProvider>();
