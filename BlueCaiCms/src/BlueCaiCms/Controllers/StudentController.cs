@@ -34,5 +34,25 @@ namespace BlueCaiCms.Controllers
             _service.Add(student);
             return RedirectToAction("Index");
         }
+
+        public ActionResult Edit(Guid id)
+        {
+            var student = _service.GetStudentById(id);
+            return View(student);
+        }
+
+
+        [HttpPost]
+        public IActionResult Edit(Student student)
+        {
+            var result = _service.Edit(student);
+            return RedirectToAction("index");
+        }
+
+        public IActionResult Delete(Guid id)
+        {
+            var result = _service.Delete(id);
+            return RedirectToAction("index");
+        }
     }
 }

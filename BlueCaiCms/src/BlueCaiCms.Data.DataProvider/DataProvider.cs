@@ -17,7 +17,7 @@ namespace BlueCaiCms.Data.DataProvider
             this.dbContext = dbContext;
         }
 
-        
+
         #endregion
 
         public List<Student> GetAllStudent()
@@ -34,6 +34,30 @@ namespace BlueCaiCms.Data.DataProvider
         {
             dbContext.Students.Add(student);
             dbContext.SaveChanges();
+        }
+
+        public bool EditStudent(Student student)
+        {
+            try
+            {
+                var oldStudent = dbContext.Students.FirstOrDefault(c => c.Id == student.Id);
+                oldStudent.Name = student.Name;
+                oldStudent.NickName = student.NickName;
+                oldStudent.Age = student.Age;
+                dbContext.SaveChanges();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public bool DeleteStudent(Guid id)
+        {
+            dbContext.Students.Remove(dbContext.Students.FirstOrDefault(c => c.Id == id));
+            dbContext.SaveChanges();
+            return true;
         }
     }
 }

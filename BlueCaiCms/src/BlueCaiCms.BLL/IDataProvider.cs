@@ -13,5 +13,9 @@ namespace BlueCaiCms.BLL
         List<Student> GetAllStudent();
 
         Student GetStudentById(Guid id);
+
+        bool EditStudent(Student student);
+
+        bool DeleteStudent(Guid id);
     }
 }

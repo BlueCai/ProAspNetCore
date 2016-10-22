@@ -24,5 +24,20 @@ namespace BlueCaiCms.BLL
         {
             return dataProvider.GetAllStudent();
         }
+
+        public Student GetStudentById(Guid id)
+        {
+            return dataProvider.GetStudentById(id);
+        }
+
+        public bool Edit(Student student)
+        {
+            return dataProvider.EditStudent(student);
+        }
+
+        public bool Delete(Guid id)
+        {
+            return dataProvider.DeleteStudent(id);
+        }
     }
 }
