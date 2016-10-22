@@ -39,6 +39,7 @@ namespace BlueCaiCms
         {
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
+            app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
         }
 

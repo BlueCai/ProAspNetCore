@@ -29,10 +29,10 @@ namespace BlueCaiCms.Controllers
         }
 
         [HttpPost]
-        public string Add(Student student)
+        public IActionResult Add(Student student)
         {
             _service.Add(student);
-            return "success";
+            return RedirectToAction("Index");
         }
     }
 }

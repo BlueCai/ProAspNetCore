@@ -4,15 +4,30 @@
 }
 
 <p>
-    List
+    <a asp-action="add" class="btn btn-success">Add</a>
 </p>
 
-<table>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>NickName</td>
+            <td>Age</td>
+            <td>Class</td>
+            <td>Actions</td>
+        </tr>
+    </thead>
     @foreach (var item in Model)
     {
         <tr>
             <td>@item.Name</td>
+            <td>@item.NickName</td>
             <td>@item.Age</td>
+            <td>@item.Class?.Name</td>
+            <td>
+                <button type="button" class="btn btn-primary">Edit</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+            </td>
         </tr>
     }
 </table>
